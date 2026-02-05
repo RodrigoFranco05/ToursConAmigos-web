@@ -1,0 +1,93 @@
+.destinos-section {
+  background-color: var(--color-white);
+}
+
+.section-header h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-header p {
+  font-size: 1.125rem;
+}
+
+.destinos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.destino-card {
+  position: relative;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.destino-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.destino-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.destino-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.destino-card:hover .destino-image img {
+  transform: scale(1.1);
+}
+
+.destino-badge {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-sm);
+}
+
+.destino-badge.educativo {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.destino-badge.recreativo {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.destino-content {
+  padding: var(--spacing-md);
+}
+
+.destino-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-primary-dark);
+}
+
+.destino-content p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .destinos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destino-image {
+    height: 200px;
+  }
+}

@@ -1,0 +1,31 @@
+.instagram-section {
+  background-color: var(--color-white);
+}
+
+.instagram-container {
+  max-width: 600px;
+  margin: 0 auto var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.instagram-container iframe {
+  display: block;
+  border-radius: var(--radius-lg);
+}
+
+.instagram-cta {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .instagram-container {
+    max-width: 100%;
+  }
+
+  .instagram-container iframe {
+    height: 500px;
+  }
+}
