@@ -1,3 +1,7 @@
+import carlosPazImg from '/source/img/carlos_paz.webp'
+import termasImg from '/source/img/termas.jpg'
+import buenosAiresImg from '/source/img/buenos_aires.jpg'
+
 // Paquetes destacados - editable
 export const paquetes = [
   {
@@ -6,7 +10,7 @@ export const paquetes = [
     fechas: 'Febrero 2026',
     precio: 'Consultar',
     descripcion: '3 días / 2 noches. Todo incluido.',
-    imagen: '/source/img/carlos_paz.webp'
+    imagen: carlosPazImg,
   },
   {
     id: 2,
@@ -14,7 +18,7 @@ export const paquetes = [
     fechas: 'Marzo 2026',
     precio: 'Consultar',
     descripcion: '2 días / 1 noche. Relax total.',
-    imagen: '/source/img/termas.jpg'
+    imagen: termasImg,
   },
   {
     id: 3,
@@ -22,6 +26,6 @@ export const paquetes = [
     fechas: 'Abril 2026',
     precio: 'Consultar',
     descripcion: 'Viaje educativo. Grupos escolares.',
-    imagen: '/source/img/buenos_aires.jpg'
-  }
+    imagen: buenosAiresImg,
+  },
 ]

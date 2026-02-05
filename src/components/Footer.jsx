@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebook, FaInstagram, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 import { contactData } from '../data/contactData'
 import './Footer.css'
+import logo from '/source/img/logo_trasparente_angulado.png'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -20,7 +21,7 @@ const Footer = () => {
       <div className="footer-content container">
         <div className="footer-column">
           <img 
-            src="/source/img/logo_trasparente_angulado.png" 
+            src={logo}
             alt="Tours Con Amigos" 
             className="footer-logo"
           />

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import logo from '/source/img/logo_trasparente_angulado.png'
 
 const Hero = () => {
   const handleScrollTo = (targetId) => {
@@ -16,7 +17,7 @@ const Hero = () => {
         <div className="hero-content">
           <h1 className="hero-title">
             <img 
-              src="/source/img/logo_trasparente_angulado.png" 
+              src={logo}
               alt="Tours Con Amigos" 
               className="hero-logo"
             />

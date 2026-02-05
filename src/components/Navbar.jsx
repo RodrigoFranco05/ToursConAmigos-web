@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
+import logo from '/source/img/logo_trasparente_angulado.png'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -33,7 +34,7 @@ const Navbar = () => {
           onClick={(e) => handleNavClick(e, 'inicio')}
         >
           <img 
-            src="/source/img/logo_trasparente_angulado.png" 
+            src={logo}
             alt="Tours Con Amigos Logo" 
           />
         </a>
@@ -60,7 +61,7 @@ const Navbar = () => {
               onClick={(e) => handleNavClick(e, 'inicio')}
             >
               <img 
-                src="/source/img/logo_trasparente_angulado.png" 
+                src={logo}
                 alt="Tours Con Amigos Logo" 
               />
             </a>
